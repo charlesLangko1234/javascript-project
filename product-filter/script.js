@@ -27,6 +27,7 @@ function product(data){
     data.forEach(datum =>{
         datum.style.display = 'inline-block';
     });
+    searchInput.value = '';
 }
 
 
