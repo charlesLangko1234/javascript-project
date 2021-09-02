@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 70px;
+}
+
+.container {
+    width: 90vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    border-radius: 20px;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #3491ED;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+}
+
+img {
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    animation: none;
+}
+
+.prev, .next {
+    font-size: 50px;
+    color: #1233B6;
+    opacity: .4;
+}
+
+.prev:hover, .next:hover {
+    opacity: 1;
+    transition: 2s;
+}
+
+@keyframes hilang {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes muncul {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    height: 50vh;
+    border: 1px solid black;
+    margin: 50px auto;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/236x/a4/e3/34/a4e3346cc0fd7e7c3a4df06f5ec27645.jpg);
+    background-size: cover;
+}
+
+.container h1 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Grande';
+    font-size: 25px;
+    color: white;
+}
+
+.container p {
+    margin-bottom: 50px;
+    font-size: 19px;
+    color: whitesmoke;
+}
+
+.container a {
+    background-color: #239b76;
+    box-shadow: 0 5px green;
+    display: inline-block;
+    padding: 20px;
+    opacity: .8;
+    margin-bottom: 10px;
+}
+
+.container a:active {
+    opacity: 1;
+    box-shadow: none;
+    margin-top: 5px;
+}

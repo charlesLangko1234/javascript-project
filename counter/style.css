@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    font-family: "Lucida Grande";
+}
+
+.container {
+    border: 1px solid black;
+    width: 500px;
+    margin: 20vh auto;
+    text-align: center;
+}
+
+.text {
+    margin: 30px 0;
+}
+
+.number {
+    font-size: 70px;
+}
+
+.btn {
+    width: 50px;
+    background-color: #239b76;
+    box-shadow: 0 5px green;
+    display: inline-block;
+    opacity: .8;
+    font-size: 30px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.btn:active {
+    box-shadow: none;
+    opacity: 1;
+}

@@ -1,0 +1,27 @@
+.container {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+}
+
+textarea {
+    margin-bottom: 30px;
+}
+
+.hasil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border: 2px solid black;
+    padding: 30px;
+    background-color: burlywood;
+}
+
+.result,h2 {
+    margin: 10px 0px 5px;
+}

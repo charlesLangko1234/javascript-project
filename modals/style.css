@@ -1,0 +1,48 @@
+.container {
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.btn {
+    width: 390px;
+    height: 30px;
+}
+
+.close {
+    float: right;
+}
+
+.button {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.tambah {
+    width: 140px;
+    background-color: #239b76;
+    box-shadow: 0 5px green;
+    display: inline-block;
+    opacity: .8;
+    font-size: 30px;
+    margin-bottom: 30px;
+    border: none;
+    color: whitesmoke;
+}
+
+.tambah:active {
+    box-shadow: none;
+    opacity: 1;
+}
+
+.text {
+    text-align: center;
+}
+
+.body {
+    font-weight: lighter;
+    padding: 0 10px;
+}

@@ -1,0 +1,25 @@
+.container {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 50px auto;
+}
+
+.row {
+    margin: 20px 40px;
+}
+
+.row:nth-child(3){
+    width: 250px;
+    height: 50px;
+    border: 1px solid grey;
+    margin-left: 90px;
+    text-align: center;
+    line-height: 10px;
+}
+
+button {
+    margin-top: 30px;
+    margin-left: 50px;
+    display: block;
+}

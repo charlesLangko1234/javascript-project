@@ -1,0 +1,23 @@
+body h1 {
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    margin: 15px auto;
+    text-align: right;
+    background-color: salmon;
+}
+
+.container button {
+    display: inline-block;
+    width: 280px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.form {
+    margin: 20px 15px;
+}

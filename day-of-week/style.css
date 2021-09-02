@@ -1,0 +1,46 @@
+.container {
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.month {
+    width: 300px;
+    height: 70px;
+    background-color: tomato;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
+
+.date {
+    width: 300px;
+    height: 160px;
+    background-color: whitesmoke;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    line-height: 160px;
+}
+
+.year {
+    width: 300px;
+    height: 50px;
+    background-color: whitesmoke;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+}
+
+.day {
+    width: 300px;
+    height: 70px;
+    background-color: rgb(161, 155, 155);
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
