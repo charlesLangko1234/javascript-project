@@ -57,3 +57,48 @@ body {
     border: 1px solid coral;
     color: coral;
 }
+
+.product-list {
+    border: 1px solid black;
+    margin-top: 50px;
+    padding: 10px;
+    width: 95vw;
+    height: 95vh;
+    float: left;
+}
+
+.product{
+    width: 255px;
+    height: 305px;
+    margin: 5px 15px;
+    display: inline-block;
+}
+
+.product .cover {
+    background-color: rgba(0, 0, 0, .5);
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 245px;
+    height: 305px;
+    position: relative;
+    padding-left: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: white;
+    white-space: pre-line;
+    text-align: center;
+    transition: 1s;
+}
+
+.product .cover:hover{
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0);
+}
+
+.product img {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    border: 5px solid coral;
+}
