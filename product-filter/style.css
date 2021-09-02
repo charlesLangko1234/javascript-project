@@ -35,6 +35,7 @@ body {
     background-color: transparent;
     transition: .5s;
     color: coral;
+    cursor: pointer;
 }
 
 .list-search {
@@ -49,6 +50,7 @@ body {
     font-family: 'Bebas Neue', cursive;
     color: beige;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .list-search span:hover{
@@ -59,7 +61,6 @@ body {
 }
 
 .product-list {
-    border: 1px solid black;
     margin-top: 50px;
     padding: 10px;
     width: 95vw;
@@ -70,7 +71,7 @@ body {
 .product{
     width: 255px;
     height: 305px;
-    margin: 5px 15px;
+    margin: 10px 20px;
     display: inline-block;
 }
 
@@ -94,6 +95,7 @@ body {
     transition: 1s;
     background-color: rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 .product img {
