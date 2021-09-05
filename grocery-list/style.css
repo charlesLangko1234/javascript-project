@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive;
+}
+
+.container {
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    padding: 15px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input .data {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.input .data label {
+    margin-top: 10px;
+}
+
+.input .icon {
+    font-size: 30px;
+}
+
+.list {
+    width: 400px;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.list .nama {
+    float: left;
+    margin-right: 10px;
+}
+
+
+.list .jumlah {
+    float: right;
+}
