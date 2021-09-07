@@ -37,12 +37,12 @@ body {
     margin: 0 auto;
 }
 
-.list .nama {
+.nama {
     float: left;
     margin-right: 10px;
 }
 
 
-.list .jumlah {
+.jumlah {
     float: right;
 }
