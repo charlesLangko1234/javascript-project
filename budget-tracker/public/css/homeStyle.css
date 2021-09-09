@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+.container {
+    background-color: #330067;
+    color: #F2F2F2;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+    padding: 20px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.container .spesific {
+    display: flex;
+    justify-content: space-around;
+}
