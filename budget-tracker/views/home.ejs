@@ -12,19 +12,21 @@
         <div class="general-info">
             <div class="balance">
                 <h3>Balance</h3>
-                <h1 class="total-money">$1000</h1>
+                <h1 class="total-money">$<%- balanceMoney %></h1>
             </div>
             <div class="spesific">
                 <span class="income">
                     <h3>Income</h3>
-                    <h2>$0</h2>
+                    <h2>$<%- incomeMoney %></h2>
+                    <input type="hidden" id="dataIncome" value="<%- incomeMoney %>">
                 </span>
                 <span class="graph">
                     <canvas id="myChart" width="200" height="200"></canvas> 
                 </span>
                 <span class="outcome">
                     <h3>Outcome</h3>
-                    <h2 style="color: #D90404;">$0</h2>
+                    <h2 style="color: #D90404;">$<%- outcomeMoney %></h2>
+                    <input type="hidden" id="dataOutcome" value="<%- outcomeMoney %>">
                 </span>
             </div>
         </div>
@@ -32,13 +34,53 @@
         <div class="dash-board">
             <h1>Dashboard</h1>
             <hr>
-            <a href="/expenses">Expenses</a>
-            <a href="/income">Income</a>
-            <a href="/all">All</a>
+            <% if (!link) { %>             
+                <a href="/expenses">Expenses</a>
+                <a href="/income">Income</a>
+                <a href="/all">All</a>
+            <% } else { %>
+                <% if (link === "layouts/expenses") { %>
+                    <a href="/expenses" style="color: #F16754;">Expenses</a>
+                    <a href="/income">Income</a>
+                    <a href="/all">All</a>
+                <% } %> 
+                <% if (link === "layouts/income") { %>
+                    <a href="/expenses">Expenses</a>
+                    <a href="/income" style="color: #F16754;">Income</a>
+                    <a href="/all">All</a>
+                <% } %> 
+                <% if (link === "layouts/all") { %>
+                    <a href="/expenses">Expenses</a>
+                    <a href="/income">Income</a>
+                    <a href="/all" style="color: #F16754;">All</a>
+                <% } %> 
+            <% } %> 
             <hr>
             <div class="list">
                 <div class="data">
-                    
+                    <ul>
+                        <% if (link === "layouts/expenses") { %>
+                            <% dataUang.forEach(data => { %>
+                                <% if (data.tipe == "expenses") { %>                                 
+                                    <li style="color: #F16754;"><%- data.salary %>: $<%- data.num %></li>
+                                <% } %>
+                            <% }) %>
+                        <% } else if(link === "layouts/income") { %>
+                            <% dataUang.forEach(data => { %>
+                                <% if (data.tipe == "income") { %>                                 
+                                    <li><%- data.salary %>: $<%- data.num %></li>
+                                <% } %>
+                            <% }) %>
+                        <% } else { %>
+                            <% dataUang.forEach(data => { %>
+                                <% if (data.tipe == "income") { %>                                 
+                                    <li><%- data.salary %>: $<%- data.num %></li>
+                                <% } else if (data.tipe == "expenses") { %>                                 
+                                    <li style="color: #F16754;"><%- data.salary %>: $<%- data.num %></li>
+                                <% } %>
+                            <% }) %>
+                        <% } %>
+                    </ul>
                 </div>
                 <%- include(link) %> 
             </div>
@@ -48,12 +90,20 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 <script>
 var ctx = document.getElementById('myChart').getContext('2d');
+var dataIncome = document.getElementById('dataIncome');
+var dataOutcome = document.getElementById('dataOutcome');
+var nilaiOutcome = Number(dataOutcome.value);
+var nilaiIncome = Number(dataIncome.value);
+if(nilaiIncome ===0 && nilaiOutcome===0){
+    nilaiOutcome = 100;
+    nilaiIncome = 100;
+}
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
         datasets: [{
             label: 'Income VS Outcome',
-            data: [200,100], 
+            data: [nilaiOutcome,nilaiIncome], 
             backgroundColor: [
                 '#D90404',
                 '#F2F2F2'

@@ -52,5 +52,14 @@ body {
 }
 
 .container .dash-board .list .data {
+    margin: 0 auto;
     height: 300px;
+    width: 85%;
+    text-align: start;
+    font-size: 20px;
+}
+
+.container .dash-board .list .data ul li {
+    margin-top: 10px;
+    list-style-type: none;
 }

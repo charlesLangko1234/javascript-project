@@ -31,6 +31,43 @@ const addMoney = (money)=>{
     saveMoney(moneys);
 }
 
+// Count ballance
+const balance = ()=>{
+    let balanceMoney = 0;
+    const moneys = loadMoney();
+    moneys.forEach(money => {
+        if(money.tipe === "expenses"){
+            balanceMoney -= Number(money.num);
+        } else if (money.tipe === "income"){
+            balanceMoney += Number(money.num);
+        }
+    });
+    return balanceMoney;
+}
+
+// count income
+const income = ()=>{
+    let incomeMoney = 0;
+    const moneys = loadMoney();
+    moneys.forEach(money => {
+        if (money.tipe === "income"){
+            incomeMoney += Number(money.num);
+        }
+    });
+    return incomeMoney;
+}
+
+// count income
+const outcome = ()=>{
+    let outcomeMoney = 0;
+    const moneys = loadMoney();
+    moneys.forEach(money => {
+        if (money.tipe === "expenses"){
+            outcomeMoney += Number(money.num);
+        }
+    });
+    return outcomeMoney;
+}
 
 // Export function
-module.exports = {loadMoney, addMoney}
+module.exports = {loadMoney, addMoney, balance, income, outcome}

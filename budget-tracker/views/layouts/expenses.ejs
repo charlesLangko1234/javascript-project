@@ -1,8 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-<h1>This Is Expanses</h1>
 <form method="post" action="/expenses" style="display: flex; justify-content: space-around; align-items: center; font-size: 25px;">
-    <input type="hidden" value="expenses">
-    <input type="text" id="salary" name="salary" placeholder="Title" style="width: 300px; height: 25px; border: none;">
-    <input type="text" id="num" name="num" placeholder="$0" style="width: 300px; height: 25px; border: none;">
+    <input type="hidden" id="tipe" name="tipe" value="expenses">
+    <input type="text" id="salary" name="salary" placeholder="Title" style="width: 300px; height: 25px; border: none;" autocomplete="off">
+    <input type="text" id="num" name="num" placeholder="$0" style="width: 300px; height: 25px; border: none;" autocomplete="off">
     <button type="submit" style="border: none;"><i class="fas fa-plus-square" style="font-size: 30px;"></i></button>
 </form>
