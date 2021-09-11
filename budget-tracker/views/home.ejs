@@ -16,16 +16,50 @@
             </div>
             <div class="spesific">
                 <span class="income">
-                    <h4>Income</h4>
-                    <h3>$0</h3>
+                    <h3>Income</h3>
+                    <h2>$0</h2>
                 </span>
-                <span class="graph"></span>
+                <span class="graph">
+                    <canvas id="myChart" width="200" height="200"></canvas> 
+                </span>
                 <span class="outcome">
-                    <h4>Outcome</h4>
-                    <h3>$0</h3>
+                    <h3>Outcome</h3>
+                    <h2 style="color: #D90404;">$0</h2>
                 </span>
+            </div>
+        </div>
+
+        <div class="dash-board">
+            <h1>Dashboard</h1>
+            <hr>
+            <a href="/expenses">Expenses</a>
+            <a href="/income">Income</a>
+            <a href="/all">All</a>
+            <hr>
+            <div class="list">
+                <div class="data">
+                    
+                </div>
+                <%- include(link) %> 
             </div>
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        datasets: [{
+            label: 'Income VS Outcome',
+            data: [200,100], 
+            backgroundColor: [
+                '#D90404',
+                '#F2F2F2'
+            ]           
+        }]
+    },
+});
+</script>
 </html>

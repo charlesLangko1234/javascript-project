@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
-.container {
+body {
+    background-color: antiquewhite;
+}
+
+.container{
+    width: 700px;
+    margin: 10px auto;
+}
+
+.container .general-info{
     background-color: #330067;
     color: #F2F2F2;
     font-family: 'Josefin Sans', sans-serif;
@@ -12,6 +21,36 @@
 }
 
 .container .spesific {
+    margin-top: 70px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.container .dash-board{
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+    padding: 20px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.container .dash-board a {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #0D0D0D;
+}
+
+.container .dash-board a:hover{
+    transition: 1s;
+    color: black;
+}
+
+.container .dash-board .list .data {
+    height: 300px;
 }
