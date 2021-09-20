@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://images.unsplash.com/photo-1561484930-998b6a7b22e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-family: 'Gluten', cursive;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.container {
+    margin: 100px auto;
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container .search {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container .search .search-input {
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 5px;
+    padding: 3px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: grey;
+    border: none;
+    padding-left: 20px;
+}
+
+.container .search .search-input:focus {
+    outline: none;
+}
+
+.container .search .search-button {
+    color: whitesmoke;
+    border-radius: 50%;
+    width: 45px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+}
+
+.container .search .search-button:hover {
+    transition: .5s;
+    color: grey;
+}
+
+
+.container .data {
+    display: none;
+    text-align: center;
+}
+
+.container .data .info-wind {
+    margin-top: -10px;
+}
