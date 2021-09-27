@@ -9,10 +9,10 @@ let jumlahBarang = 0;
 function addList(nama,jmlh){
     const namaB = document.createElement('li');
     namaB.innerHTML = `${nama} Sejumlah ${jmlh}`;
-    const cek = document.createElement('input');
-    cek.setAttribute('type','radio');
-    namaB.appendChild(cek);
+    namaB.style.fontSize = '30px';
+    namaB.style.fontFamily = 'arial';
     lists.appendChild(namaB); 
+    jumlahBarang+=1;
 }
 
 
@@ -20,4 +20,6 @@ addBtn.addEventListener('click',()=>{
     let nama = inputNama.value;
     let jmlh = inputJumlah.value;
     addList(nama,jmlh);
+    inputNama.value = '';
+    inputJumlah.value = '';
 });
