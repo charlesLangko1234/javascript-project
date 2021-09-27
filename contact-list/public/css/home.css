@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Patrick Hand', cursive;
+    margin-top: 20px;
+}
+
+.container .detail, .contact-list {
+    width: 500px;
+    height: 850px;
+    padding: 30px;
+}
+
+/* Contact List */
+.container .contact-list {
+    background-color: #E8E1D3;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container .contact-list .search input {
+    width: 85%;
+    height: 30px;
+    float: left;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container .contact-list .search .search-button {
+    float: right;
+    font-size: 30px;
+}
+
+.container .contact-list .search .search-button:hover{
+    transition: .5s;
+    opacity: .5;
+}
+/* End of Contact List */
+
+
+/* Detail contact */
+.container .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #216974;
+    color: whitesmoke;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container .detail h1 {
+    font-size: 50px;
+}
+
+.container .detail h2 {
+    margin-top: 5px;
+    font-size: 40px;
+}
