@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contact</title>
+    <link rel="stylesheet" href="css/add.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Contact</h1>
+        <form method="post" enctype="multipart/form-data" action="/add">
+            <input type="text" id="nama_contact" name="nama_contact" placeholder="Name..." autocomplete="off">
+            <input type="text" id="nomor_tlp" name="nomor_tlp" placeholder="Nomor..." autocomplete="off">
+            <input type="text" id="Email" name="Email" placeholder="Email..." autocomplete="off">
+            <input type="file" id="image" name="image" placeholder="Image...">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

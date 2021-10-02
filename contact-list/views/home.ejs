@@ -11,82 +11,28 @@
 <body>
     <div class="container">
          <div class="detail">
-            <img src="img/coin-back.png" class="img-contact" style="width: 300px; height: 300px;">
+            <!-- <img src="img/coin-back.png" class="img-contact" style="width: 300px; height: 300px;">
             <h1 class="nama">Charles Langko</h1>
-            <h2 class="noTlp">081337608745</h2>
+            <h2 class="noTlp">081337608745</h2> -->
          </div>
          <div class="contact-list">
             <div class="search">
                 <input type="text" class="search" placeholder="Search...">
                 <span class="search-button"><i class="fas fa-search"></i></span>
                 <div class="data">
-                    <div class="data1Orang">
-                        <img src="img/coin-back.png">
-                        <div class="data-ringkasan">
-                            <p class="nama">Charles Langko</p>
-                            <p class="noHp">081337608745</p>
+                    <% datas.forEach(data => { %>
+                        <div class="data1Orang">
+                            <img src="img/data/<%= data.filename %>" style="border-radius: 50%;">
+                            <div class="data-ringkasan">
+                                <p class="nama"><%= data.nama_contact %></p>
+                                <p class="noHp"><%= data.nomor_tlp %></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="data1Orang">
-                        <img src="img/coin-back.png">
-                        <div class="data-ringkasan">
-                            <p class="nama">Charles Langko</p>
-                            <p class="noHp">081337608745</p>
-                        </div>
-                    </div>
-                    <div class="data1Orang">
-                        <img src="img/coin-back.png">
-                        <div class="data-ringkasan">
-                            <p class="nama">Charles Langko</p>
-                            <p class="noHp">081337608745</p>
-                        </div>
-                    </div>
-                    <div class="data1Orang">
-                        <img src="img/coin-back.png">
-                        <div class="data-ringkasan">
-                            <p class="nama">Charles Langko</p>
-                            <p class="noHp">081337608745</p>
-                        </div>
-                    </div>
-                    <div class="data1Orang">
-                        <img src="img/coin-back.png">
-                        <div class="data-ringkasan">
-                            <p class="nama">Charles Langko</p>
-                            <p class="noHp">081337608745</p>
-                        </div>
-                    </div>
-                    <div class="data1Orang">
-                        <img src="img/coin-back.png">
-                        <div class="data-ringkasan">
-                            <p class="nama">Charles Langko</p>
-                            <p class="noHp">081337608745</p>
-                        </div>
-                    </div>
-                    <div class="data1Orang">
-                        <img src="img/coin-back.png">
-                        <div class="data-ringkasan">
-                            <p class="nama">Charles Langko</p>
-                            <p class="noHp">081337608745</p>
-                        </div>
-                    </div>
-                    <div class="data1Orang">
-                        <img src="img/coin-back.png">
-                        <div class="data-ringkasan">
-                            <p class="nama">Charles Langko</p>
-                            <p class="noHp">081337608745</p>
-                        </div>
-                    </div>
-                    <div class="data1Orang">
-                        <img src="img/coin-back.png">
-                        <div class="data-ringkasan">
-                            <p class="nama">Charles Langko</p>
-                            <p class="noHp">081337608745</p>
-                        </div>
-                    </div>
+                    <% }) %>
                 </div>
             </div>
-            <div class="add-contact">
-               <i class="fas fa-plus-circle"></i>
+            <div class="add-contact">               
+               <a href="/add"><i class="fas fa-plus-circle" id="plus"></i></a>
             </div>
          </div>
     </div>

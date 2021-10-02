@@ -96,7 +96,24 @@
 /* Enf of search */
 
 /* Add contact */
+.container .contact-list .add-contact {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
 
+.container .contact-list .add-contact a {
+    text-decoration: none;
+    color: #216974;
+}
+
+.container .contact-list .add-contact a:focus {
+    transition: .5s;
+    opacity: .5;
+}
 /* End of add contact */
 /* End of Contact List */
 
